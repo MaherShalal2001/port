@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 h4{font-size: 0px;}
+body{
+    overflow:hidden;
+}
 #top{
     background-image: url("background.png");
     background-size: cover;
@@ -71,7 +74,7 @@ h4{font-size: 0px;}
 }
 @media screen and (max-width:768px){
     body{
-        overflow: hidden;
+        overflow: hidden !important;
     }
 
     .nav-lins{
