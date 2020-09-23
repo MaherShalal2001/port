@@ -3,9 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-h4{font-size: 0px;}
 body{
-    overflow:hidden;
+    overflow: hidden !important;
 }
 #top{
     background-image: url("background.png");
@@ -72,27 +71,25 @@ body{
         font-size: 10px !important;
     }
 }
-@media screen and (max-width:768px){
-    body{
-        overflow: hidden !important;
-    }
+@media screen and (max-width:700px){
 
     .nav-lins{
         position: absolute;
         right: 0px;
         min-height: 7vh;
         top: 12%;
-        width: 50% !important;
-        background-color: none;
-        border-bottom-left-radius: 60px;
+        width: 50%;
+        border-radius: 60px;
         display: flex;
         flex-direction: column;
         align-items: left;
-        transform:translateX(100%);
+        transform:translateY(-150%);
         transition: transform 0.5s ease-in;
         padding: 30px;
         background-color: #EA2027 !important;
         z-index: 1;
+        opacity: 0;
+        overflow: hidden !important;
     }
     .nav-lins li{
         opacity: 0;
@@ -112,7 +109,7 @@ body{
         background-size: 30px;
     }
     .burger{
-        display: inline;
+        display: inline-block;
     }
   .top{
     margin: 200px 10px auto !important;
@@ -125,7 +122,8 @@ body{
 }
 
 .nav-active{
-    transform: translateX(0%);
+    transform: translateY(0%);
+    opacity: 1;
 }
 
 
